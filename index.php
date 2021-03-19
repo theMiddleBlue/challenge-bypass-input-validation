@@ -1,8 +1,8 @@
 <?php
 
-    echo "This web application is vulnerable to RCE on <b>code</b> POST argument. Find a way to execute <b>cat /etc/passwd</b> bypassing input validation.<br>\n";
-    echo "Example: curl -d 'code=id' http://".$_SERVER["HTTP_HOST"]."/index.php <br><br>\n\n";
-    error_reporting(0);
+	echo "This web application is vulnerable to RCE on <b>code</b> POST argument. Find a way to execute <b>cat /etc/passwd</b> bypassing input validation.<br>\n";
+	echo "Example: curl -d 'code=id' http://".$_SERVER["HTTP_HOST"]."/index.php <br><br>\n\n";
+	error_reporting(0);
 	$blacklist = [
 		"alias","eval","bash","sh","bin","usr","etc","pass","src","source","ls","nc","apt","cat","more","less","vi","vim"
 	];
